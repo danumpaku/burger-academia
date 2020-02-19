@@ -1,23 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactLogo from './ReactLogo/ReactLogo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Aplicación en desarrollo.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprende React
-        </a>
+      <header>
+        <ReactLogo />
+        <p>Aplicación en desarrollo.</p>
       </header>
     </div>
   );

@@ -1,0 +1,27 @@
+.ReactLogoContainer {
+    text-align: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.ReactLogo {
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .ReactLogo {
+        animation: ReactLogoSpin infinite 20s linear;
+    }
+}
+
+@keyframes ReactLogoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
