@@ -4,22 +4,23 @@ import Ingredient from '../../model/Ingredient';
 
 class BurgerBuilder extends Component {
 
+    state = {
+        ingredients: [
+            Ingredient.bacon,
+            Ingredient.cheese,
+            Ingredient.meat,
+            Ingredient.cheese,
+            Ingredient.meat,
+            Ingredient.salad,
+        ]
+    };
+
 
     render () {
         return (
             <Fragment>
-            <div>Burguer</div>
-            <div>Build Controls</div>
-            
-            <Burger ingredients = {[
-                Ingredient.bacon,
-                Ingredient.cheese,
-                Ingredient.meat,
-                Ingredient.cheese,
-                Ingredient.meat,
-                Ingredient.salad,
-            ]}/>
-            
+                <div>Build Controls</div>
+                < Burger ingredients = {this.state.ingredients}/>
             </Fragment>
         );
     }
