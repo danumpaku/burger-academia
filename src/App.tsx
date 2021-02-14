@@ -4,7 +4,6 @@ import ReactLogo from './containers/ReactLogo/ReactLogo';
 import Layout from './components/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 
-
 const App = () =>
   <Fragment>
   <div className="App">
@@ -13,6 +12,7 @@ const App = () =>
     </Layout>
   </div>
   <ReactLogo />
+  <hr />
   </Fragment>
 ;
 
